@@ -3,4 +3,4 @@ En este documento se incluirán actividades del módulo DAW.
 ## Tema 0 - Introdución
 |Ejercicios|Descripción|
 |----------|-----------|
-|[Ejercicio 1](DAW/Tema0/Ejercicio 1.md)|Práctica Servidor Web|
+|[Ejercicio 1](Tema0/Ejercicio 1.md)|Práctica Servidor Web|
