@@ -10,7 +10,7 @@ En este documento se incluirán actividades del módulo DAW.
 ## Tema 1 - Servidor Web
 |Ejercicios||
 |----------|-----------|
-|[Ejercicio1](Tema1/addport.ssh)|Crea un script que añada un puerto de escucha en el fichero de configuración de Apache. El puerto se recibirá como parámetro en la llamada y se comprobará que no esté ya presente en el fichero de configuración|
-|[Ejercicio2](Tema1/adddomain.ssh)|Crea un script que añada un nombre de dominio y una ip al fichero host. Debemos comprobar que no existe dicho dominio.|
-|[Ejercicio3](Tema1/web.ssh)|Crea un script que nos permita crear una página web con un título, una cabecera y un mensaje|
+|[Ejercicio1](addport.ssh)|Crea un script que añada un puerto de escucha en el fichero de configuración de Apache. El puerto se recibirá como parámetro en la llamada y se comprobará que no esté ya presente en el fichero de configuración|
+|[Ejercicio2](adddomain.ssh)|Crea un script que añada un nombre de dominio y una ip al fichero host. Debemos comprobar que no existe dicho dominio.|
+|[Ejercicio3](web.ssh)|Crea un script que nos permita crear una página web con un título, una cabecera y un mensaje|
 
