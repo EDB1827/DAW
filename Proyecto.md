@@ -7,6 +7,7 @@ Ahora crearemos los dominios.
 Con sudo mkdir /var/www/html/centro_intranet y sudo mkdir /var/www/html/departamentos_centro_intranet
 
 ![Imagen](imgproyecto/apache1.PNG)
+
 Introducimos el siguiente comando
 
 ![Imagen](imgproyecto/apache2.PNG)
@@ -125,6 +126,28 @@ Entramos en nuestra pagina donde nos pedira que insertemos la contraseña
 Si la ponemos mal nos prohibira entrar con el siguente mensaje
 
 ![Imagen](imgproyecto/py4.PNG)
+
+
+## Instala y configura AWStats
+Instalamos AWStats
+
+![Imagen](imgproyecto/aw.PNG)
+
+Habilitamos módulo CGI en Apache
+
+![Imagen](imgproyecto/aw2.PNG)
+
+Configuramos AWStats
+
+![Imagen](imgproyecto/aw3.PNG)
+
+![Imagen](imgproyecto/aw4.PNG)
+![Imagen](imgproyecto/aw5.PNG)
+![Imagen](imgproyecto/aw6.PNG)
+![Imagen](imgproyecto/aw7.PNG)
+
+
+
 
 
 
