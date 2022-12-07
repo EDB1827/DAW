@@ -142,9 +142,108 @@ Configuramos AWStats
 ![Imagen](imgproyecto/aw3.PNG)
 
 ![Imagen](imgproyecto/aw4.PNG)
+
 ![Imagen](imgproyecto/aw5.PNG)
+
 ![Imagen](imgproyecto/aw6.PNG)
+
 ![Imagen](imgproyecto/aw7.PNG)
+
+![Imagen](imgproyecto/aw8.PNG)
+
+Después de estos cambios, se necesita construir sus estadísticas iniciales que se generarán a partir de los registros actuales en su servidor. Puede hacerlo utilizando
+
+![Imagen](imgproyecto/aw9.PNG)
+
+![Imagen](imgproyecto/aw10.PNG)
+
+Configuramos Apache para AWStats
+ 
+![Imagen](imgproyecto/apw1.PNG)
+ 
+Ahora para acceder AWSTATS ponemos http://centro.intranet/cgi-bin/awstats.pl?config=centro.intranet.
+ 
+![Imagen](imgproyecto/apw2.PNG)
+
+
+## Instala un segundo servidor (nginx)
+Instalamos mysql
+
+![Imagen](imgproyecto/phpm1.PNG)
+
+![Imagen](imgproyecto/phpm2.PNG)
+
+![Imagen](imgproyecto/phpm3.PNG)
+
+Creamos la base de daros y al usuario le damos todos los permisos
+
+![Imagen](imgproyecto/phpm4.PNG)
+
+Descargamos el paquete phpmyadmin
+
+![Imagen](imgproyecto/phpm5.PNG)
+
+![Imagen](imgproyecto/phpm6.PNG)
+
+Instalamosel servidor web Nginx y todos los paquetes necesarios
+
+![Imagen](imgproyecto/phpm7.PNG)
+
+![Imagen](imgproyecto/phpm8.PNG)
+
+![Imagen](imgproyecto/phpm9.PNG)
+
+Editamos el archivo de conmfiguración denominador: PHP.Ini
+
+![Imagen](imgproyecto/phpm10.PNG)
+
+![Imagen](imgproyecto/phpm11.PNG)
+
+Habilitamos y configuramos los siguientes elementos del archivo de configuración PHP
+
+![Imagen](imgproyecto/phpm12.PNG)
+
+Editamos el archivo de configuración de Nginx para el sitio we predeterminado
+
+![Imagen](imgproyecto/phpm13.PNG)
+
+habilitamos el soporte PHP pata Nginx
+
+![Imagen](imgproyecto/phpm14.PNG)
+
+Introducimos el siguiente comando
+
+![Imagen](imgproyecto/phpm15.PNG)
+
+Reiniciamos
+
+![Imagen](imgproyecto/phpm16.PNG)
+
+Ahora creamos los directorios necesarios y les damos permisos
+
+![Imagen](imgproyecto/phpm17.PNG)
+
+![Imagen](imgproyecto/phpm18.PNG)
+
+Creamos este archivo
+
+![Imagen](imgproyecto/phpm19.PNG)
+
+Y lo editamos con nano  /var/www/html/phpmyadmin/config.inc.php
+
+![Imagen](imgproyecto/phpm20.PNG)
+
+Y ya por último utilizaremos el siguiente comando para generar la clave aleatoria utilizada en el parámetro denominado: openssl rand -base64 32.
+
+![Imagen](imgproyecto/phpm21.PNG)
+
+
+
+
+
+
+
+
 
 
 
