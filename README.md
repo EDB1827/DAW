@@ -19,6 +19,5 @@ En este documento se incluirán actividades del módulo DAW.
 ## Tema 2 - DNS
 |Ejercicios|Enunciado|
 |----------|-----------|
-|[Ejercicio 1](Tema2/Introduccion.sh)|¿Qué es TLD? ¿Cómo se clasifican los dominios de nivel superior?, Pon algunos ejemplos.
-|
+|[Ejercicio 1](Tema2/Introduccion)|¿Qué es TLD? ¿Cómo se clasifican los dominios de nivel superior?, Pon algunos ejemplos.|
 
