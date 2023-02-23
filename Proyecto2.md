@@ -129,6 +129,78 @@ sudo service vsftpd restart
 ![Imagen](imgproyecto/ssh_activo.png)
 
 
+## DNS
+
+### Instalar BIND en servidores DNS
+En ambos servidores DNS, ns1 y ns2, actualice la caché del paquete apt escribiendo lo siguiente: sudo apt-get update
+
+Ahora instale BIND:sudo apt-get install bind9 bind9utils bind9-doc
+
+### Configurar Bind para el modo IPv4
+Antes de continuar, configuraremos BIND para el modo IPv4, ya que nuestra red privada utiliza IPv4 exclusivamente. En ambos servidores, edite la configuración predeterminada de bind9 escribiendo lo siguiente:
+sudo nano /etc/default/bind9
+![Imagen](imgproyecto/nano_bind.png)
+
+Reinicie BIND para implementar los cambios:
+sudo systemctl restart bind9
+
+### Configurar el servidor DNS primario
+En ns1, abra el archivo named.conf.options para editarlo:
+sudo nano /etc/bind/named.conf.options
+![Imagen](imgproyecto/dns1.png)
+
+Y Tenemos que modificarlo para que nos quede asi:
+![Imagen](imgproyecto/dns2.png)
+
+En ns1, abra el archivo named.conf.options para editarlo:
+sudo nano /etc/bind/named.conf.options
+![Imagen](imgproyecto/dns2.png)
+En ns1, abra el archivo named.conf.options para editarlo:
+![Imagen](imgproyecto/dns3.png)
+
+### Crearemos el directorio en el que se alojarán nuestros archivos de zona.
+
+Según nuestra configuración de named.conf.local, esa ubicación debería ser /etc/bind/zones:
+sudo mkdir /etc/bind/zones
+
+Basaremos nuestro archivo de la zona de reenvío en el archivo de zona db.local de muestra. Cópielo a la ubicación adecuada con los siguientes comandos:
+sudo cp /etc/bind/db.local /etc/bind/zones/db.nyc3.proyecto.com
+
+Ahora, editaremos nuestro archivo de la zona de reenvío:
+Y nos quedara algo así:
+![Imagen](imgproyecto/dns6.png)
+
+### Y para la zona inversa, lo mismo y tendremos algo asi
+![Imagen](imgproyecto/dns7.png)
+
+### Para comprobar la configuración de la zona de reenvío “nyc3.example.com”, ejecute el siguiente comando (cambie los nombres para que coincidan con su zona y archivo de reenvío).
+![Imagen](imgproyecto/dns8.png)
+
+### Reiniciamos BIND 
+sudo systemctl restart bind9
+Si configuró el firewall UFW, abra el acceso a BIND escribiendo lo siguiente:
+sudo ufw allow Bind9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
