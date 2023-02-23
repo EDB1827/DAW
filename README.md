@@ -25,6 +25,5 @@ En este documento se incluirán actividades del módulo DAW.
 |[Ejercicio4](Tema2/ej4.md)|¿Qué es un archivo de zona (zone file)? Indica para qué sirven los registros de un archivo de zona. Pon un ejemplo de un archivo de zona e interpreta la información almacenada|
 
 ## [Proyecto 2º Trimestre](Proyecto2.md)
-|----------|-----------|
 ### [Scripts](scripts.md)
 
