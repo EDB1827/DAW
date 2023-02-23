@@ -12,11 +12,11 @@ php -v
 sudo mkdir /var/www/ejemplo
 
 ### A continuación, asigne la propiedad del directorio con la variable de entorno $USER, que hará referencia a su usuario de sistema actual:
-![Imagen](imgproyecto/servidor2.PNG)
+![Imagen](imgproyecto/servidor2.png)
 
 ### Luego, abra un nuevo archivo de configuración en el directorio sites-available de Apache usando el editor de línea de comandos que prefiera. En este caso, utilizaremos nano:
 sudo nano /etc/apache2/sites-available/your_domain.conf. Y nos debe salir algo asi
-![Imagen](imgproyecto/servidor3.PNG)
+![Imagen](imgproyecto/servidor3.png)
 
 ### Ahora, puede usar a2ensite para habilitar el nuevo host virtual:
 sudo a2ensite ejemplo
@@ -32,11 +32,11 @@ sudo systemctl reload apache2
 
 ### Cree un archivo index.html en esa ubicación para poder probar que el host virtual funcione según lo previsto:
 nano /var/www/proyecto/index.html
-![Imagen](imgproyecto/servidor4.PNG)
+![Imagen](imgproyecto/servidor4.png)
 
 ### Ahora, diríjase a su navegador y acceda al nombre de dominio o la dirección IP de su servidor una vez más:
 http://proyecto_o_la_ip
-![Imagen](imgproyecto/servidor5.PNG)
+![Imagen](imgproyecto/servidor5.png)
 
 
 ## Los clientes dispondrán de un directorio de usuario con una página web por defecto.
@@ -50,7 +50,7 @@ sudo chown -R <nombre-de-usuario>:<nombre-de-usuario> /home/<nombre-de-usuario>/
 sudo nano /home/<nombre-de-usuario>/public_html/index.html
   
 ### Para Apache, edita el archivo "/etc/apache2/sites-available/000-default.conf" y agrega las siguientes líneas dentro de la sección <VirtualHost *:80>:
-![Imagen](imgproyecto/apache22.PNG) 
+![Imagen](imgproyecto/apache22.png) 
 
 ### Para Nginx, edita el archivo "/etc/nginx/sites-available/default" y agrega las siguientes líneas dentro de la sección server:
   
@@ -73,10 +73,10 @@ sudo mysql
 CREATE DATABASE proyecto;
 
 ### El siguiente comando crea un usuario nuevo llamado user, que utiliza mysql_native_password como método de autenticación predeterminado. Definimos la contraseña de este usuario como 12345, pero debe sustituir este valor por una contraseña segura de su elección.
-![Imagen](imgproyecto/mysql-crear-user.PNG)
+![Imagen](imgproyecto/mysql-crear-user.png)
 
 ### Ahora, debemos darle permiso a este usuario a la base de datos proyecto:
-![Imagen](imgproyecto/mysql-privilegios.PNG)
+![Imagen](imgproyecto/mysql-privilegios.png)
 
 ### Ahora cerramos mysql con el comando exit
 
@@ -84,7 +84,7 @@ CREATE DATABASE proyecto;
 mysql -u user -p
 
 ### Observe el indicador -p en este comando, que le solicitará la contraseña que utilizó cuando creó el usuario user. Después de iniciar sesión en la consola de MySQL, confirme que tenga acceso a la base de datos proyecto:
-![Imagen](imgproyecto/phpmyadmin.PNG)
+![Imagen](imgproyecto/phpmyadmin.png)
 
 ### Ahora crearemos una tabla dentro de la base de datos
 INSERT INTO proyecto.lista (content) VALUES ("Mi item");
@@ -97,7 +97,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 ### Configura el servidor FTP para utilizar TLS. Para ello, edita el archivo de configuración del servidor FTP "vsftpd.conf" ubicado en "/etc/" utilizando el editor de texto de tu preferencia. Por ejemplo, puedes usar nano con el siguiente comando:
 sudo nano /etc/vsftpd.conf
-![Imagen](imgproyecto/tls.PNG)
+![Imagen](imgproyecto/tls.png)
 
 ### Reinicia el servicio FTP para que los cambios surtan efecto. Puedes hacerlo con el siguiente comando:
 sudo service vsftpd restart
@@ -113,20 +113,20 @@ sudo apt-get install openssh-server vsftpd
 
 ### Configura el acceso SSH en tu servidor. Para ello, edita el archivo de configuración del servidor SSH "sshd_config" ubicado en "/etc/ssh/" utilizando el editor de texto de tu preferencia. Por ejemplo, puedes usar nano con el siguiente comando:
 sudo nano /etc/ssh/sshd_config
-![Imagen](imgproyecto/ssh_nano.PNG)
+![Imagen](imgproyecto/ssh_nano.png)
 
 ### Reinicia el servicio SSH para que los cambios surtan efecto. Puedes hacerlo con el siguiente comando:
 sudo service ssh restart
 
 ### Configura el acceso FTP en tu servidor. Para ello, edita el archivo de configuración del servidor FTP "vsftpd.conf" ubicado en "/etc/" utilizando el editor de texto de tu preferencia. Por ejemplo, puedes usar nano con el siguiente comando:
 sudo nano /etc/vsftpd.conf
-![Imagen](imgproyecto/confg_vsftpd.PNG)
+![Imagen](imgproyecto/confg_vsftpd.png)
 
 ### Reinicia el servicio FTP para que los cambios surtan efecto. Puedes hacerlo con el siguiente comando:
 sudo service vsftpd restart
 
 ### Con estos pasos, ya has habilitado el acceso mediante SSH y FTP en tu servidor Ubuntu. Ahora puedes conectarte al servidor utilizando un cliente SSH o FTP desde otro equipo en la red utilizando la dirección IP del servidor y el puerto correspondiente (por defecto el puerto 22 para SSH y el puerto 21 para FTP). Recuerda que debes configurar la autenticación y la seguridad de los servicios SSH y FTP de acuerdo a tus necesidades y políticas de seguridad.
-![Imagen](imgproyecto/ssh_activo.PNG)
+![Imagen](imgproyecto/ssh_activo.png)
 
 
 
