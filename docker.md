@@ -3,19 +3,24 @@
 ## Practica 2
 ### Ejecuta la imagen "hello-world"
 ![Imagen](imgproyecto/hello-world.png)
+
 ### Muestra las imágenes Docker instaladas
 ![Imagen](imgproyecto/docker-images.png)
+
 ### Muestra los contenedores Docker
 ![Imagen](imgproyecto/docker-ps.png)
+
 ### Edita el fichero Dockerfile
 Si usamos una imagen de ubuntu y hacemos docker run -it ubuntu:20.04 obtendremos lo siguiente:
 
 ![Imagen](imgproyecto/docker-run-it.png)
+
 Si consultamos para ver la versión de git nos sale:
 
 ![Imagen](imgproyecto/git-version.png)
 
 Asi que procedemos a la instalacion de este paquete
+
 ![Imagen](imgproyecto/install-git.png)
 
 Ahora dentro del dockerfille añadiremos lo siguiente
