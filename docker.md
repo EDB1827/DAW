@@ -11,10 +11,14 @@
 Si usamos una imagen de ubuntu y hacemos docker run -it ubuntu:20.04 obtendremos lo siguiente:
 ![Imagen](imgproyecto/docker-run-it.png)
 Si consultamos para ver la versión de git nos sale:
+
 ![Imagen](imgproyecto/git-version.png)
+
 Asi que procedemos a la instalacion de este paquete
 ![Imagen](imgproyecto/install-git.png)
+
 Ahora dentro del dockerfille añadiremos lo siguiente
+
 ![Imagen](imgproyecto/docker-file.png)
 
 ### Construye el contenedor
@@ -23,7 +27,7 @@ Primero haremos lo siguiente
 Y ahora ejecutamos el container
 ![Imagen](imgproyecto/docker-run-container.png)
 Y aqui podemos ver que esta funcionando
-![Imagen](imgproyecto/nueva-terminal-ps-a.png)
+![Imagen](imgproyecto/nueva-terminal-ps -a.png)
 
 ### Create una cuenta en hub.docker.com
 Para crearnos la cuenta accederemos a la pagina y seguiremos los pasos
