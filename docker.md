@@ -110,7 +110,7 @@ El programa docker-compose se debe ejecutar en el directorio donde este ese fich
 
 Para crear el escenario:
 
-![Imagen](imgproyecto/guess2.png)
+![Imagen](imgproyecto/guess2png.png)
 
 Para listar los contenedores:
 
