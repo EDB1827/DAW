@@ -86,6 +86,46 @@ Y ya podemos ver que esta subido
 ![Imagen](imgproyecto/docker-eliminar-todo.png)
 ![Imagen](imgproyecto/docker-ps-a3.png)
 
+## Práctica 4
+
+### GuesstBook
+
+![Imagen](imgproyecto/docker-2-containers.png)
+
+![Imagen](imgproyecto/docker-network.png)
+
+![Imagen](imgproyecto/guestbook.png)
+
+### Temperatura
+
+![Imagen](imgproyecto/docker-temperatura.png)
+
+## Práctica 5
+
+### GuesstBook
+
+El programa docker-compose se debe ejecutar en el directorio donde este ese fichero.
+
+![Imagen](imgproyecto/guess1.png)
+
+Para crear el escenario:
+
+![Imagen](imgproyecto/guess2.png)
+
+Para listar los contenedores:
+
+![Imagen](imgproyecto/guess3.png)
+
+Para parar los contenedores:
+
+![Imagen](imgproyecto/guess4.png)
+
+Para eliminar el escenario:
+
+![Imagen](imgproyecto/guess5.png)
+
+
+
 
 
 
