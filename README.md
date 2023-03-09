@@ -27,3 +27,5 @@ En este documento se incluirán actividades del módulo DAW.
 ## [Proyecto 2º Trimestre](Proyecto2.md)
 ### [Scripts](scripts.md)
 
+## [Práctica Docker](docker.md)
+
